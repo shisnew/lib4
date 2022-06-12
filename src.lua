@@ -299,6 +299,10 @@ function Library.Start(settings)
             Exit.TextColor3 = Color3.fromRGB(217, 217, 217)
             Exit.TextSize = 13.000
 
+            Exit.MouseButton1Click:Connect(function()
+                Main:Destroy()
+            end)
+            
             UICorner_3.CornerRadius = UDim.new(0, 4)
             UICorner_3.Parent = Exit
 
